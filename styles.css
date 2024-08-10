@@ -1,0 +1,197 @@
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .text-area, .mensaje {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnEncriptar, .btnDesencriptar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-area, .mensaje {
+        width: 100%;
+        margin: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnEncriptar, .btnDesencriptar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+* {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+}
+
+.header_img {
+    padding-top: 7px;
+    margin-left: 7px;
+    width: 10%;
+    border-radius: 10px;
+}
+
+.header_img{
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 50px 100px;
+}
+
+.text-area {
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 36px;
+    resize: none;
+}
+::placeholder { color: #0a3871; }
+.text-area:focus { outline: none; }
+
+.informacion{
+     
+    font-size: 1px;
+    
+}
+
+.mensaje {
+    background: white;
+    background-image: url("Muñeco.png"); /*agregar imagen*/
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    height: 700px; /* Ajusta la altura según tus necesidades */
+    resize: none;
+    font-size: 50px;
+    margin-top: -100px;
+}
+.mensaje:focus { outline: none; }
+
+.buttons {
+    display: flex;
+    margin-top: 18px;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.btnEncriptar, .btnDesencriptar {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+    text-align: center;
+}
+
+.btnEncriptar {
+    background-color: #0a3871;
+    border: 2px solid #0a3871;
+    color: white;
+}
+
+.btnEncriptar:hover { background-color: #083560; }
+
+.btnDesencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+
+.btnDesencriptar:hover { background-color: #c2d1e1; }
+
+/* Estilos para la sección derecha */
+.input-copy-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-copy-container textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 36px;
+    border-radius: 5px;
+}
+
+.input-copy-container button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.input-copy-container button:hover {
+    background-color: #218838;
+}
+
+.titulo_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}

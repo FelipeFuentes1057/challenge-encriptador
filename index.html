@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Challenge encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logoalura.png" alt="Logo" class="header_img" id="logo">
+    </header>
+
+    <main>
+        <section>
+            <div class="titulo_container">
+           
+            </div>   
+            <div>
+                 <textarea class="text-area" id="valorUsuario" placeholder="Ingrese el texto aquí..."></textarea>
+            </div>
+            <div>
+                <img src="Vector.png">  
+                <span class="informacion"></span>Solo letras minúsculas y sin acentos  </span>
+            </div>
+            <div class="buttons">
+                <button  class="btnEncriptar"     type="button" id="btnEncriptar">Encriptar</button>
+                <button  class="btnDesencriptar"  type="button" id="btnDesencriptar">Desencriptar</button> 
+            </div>
+       </section>
+
+       <section>
+        <div class="input-copy-container">
+            <textarea  class="mensaje" id="palabraEncriptada">Ningún mensaje fue encontrado</textarea>           
+            <button type="button" id="btnCopiar">Copiar</button>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
